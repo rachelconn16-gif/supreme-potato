@@ -12,6 +12,10 @@
   --text-light: #e1e8d1; /* Light green/off-white for body text */
   --text-dark: #2a3a0f;  /* Dark green for headings and links */
   --text-muted: #c7c7b2; /* Muted text */
+  
+    --panel-bg: rgba(19, 22, 18, 0.35); /* 35% opacity */
+    --text-light: #f5f5e8;
+    --text-muted: #c7c7b2;
 }
 
 /* === Page Background Image === */
