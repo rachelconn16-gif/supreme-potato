@@ -3,14 +3,15 @@
 
 /* === Variables Using Your Color Palette === */
 :root {
-  --forest1: #002300;  /* Primary green */
-  --forest2: #333d1c;  /* Dark green for borders */
-  --forest3: #131612;  /* Darker background */
-  --forest4: #535028;  /* Accent */
+  --forest1: #5e6828;   /* Primary green for header/buttons */
+  --forest2: #333d1c;   /* Dark green for borders */
+  --forest3: #131612;   /* Very dark background */
+  --forest4: #535028;   /* Accent green */
 
   --panel-bg: #5e6828;   /* Green panels */
-  --text-light: #f5f5e8;
-  --text-muted: #c7c7b2;
+  --text-light: #e1e8d1; /* Light green/off-white for body text */
+  --text-dark: #2a3a0f;  /* Dark green for headings and links */
+  --text-muted: #c7c7b2; /* Muted text */
 }
 
 /* === Page Background Image === */
@@ -24,30 +25,34 @@ body {
 /* === Panels / Boxes === */
 .box, .panel, .card, .sidebar, .denBox,
 .profile-box, .feature, .container.bg, .main {
-  background: var(--panel-bg) !important; /* now green */
+  background: var(--panel-bg) !important; /* Green panels */
   border: 1px solid var(--forest2) !important;
   border-radius: 10px !important;
   color: var(--text-light) !important;
+  padding: 15px;
+  margin: 15px 0;
 }
 
-/* === Text === */
+/* === Headings === */
 h1, h2, h3, h4, header a, .title {
-  color: var(--forest1) !important;
+  color: var(--text-dark) !important; /* Dark green headings for contrast */
   font-weight: 600 !important;
 }
 
+/* === Muted Text === */
 .muted, small, .meta {
   color: var(--text-muted) !important;
 }
 
 /* === Links === */
-a { color: var(--forest1) !important; }
+a { color: var(--text-dark) !important; }  /* Dark green links */
 a:hover { color: var(--forest4) !important; }
 
 /* === Navigation Bar / Banner === */
 header, #header, .navbar {
-  background: var(--forest1) !important;  /* fully green banner */
+  background: var(--forest1) !important;  /* Fully green header */
   border-bottom: 1px solid var(--forest2) !important;
+  padding: 10px 20px;
 }
 
 /* === Buttons === */
@@ -56,6 +61,10 @@ header, #header, .navbar {
   color: #0f130c !important;
   border-radius: 6px !important;
   border: none !important;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s;
 }
 .button:hover, .btn:hover { background: var(--forest4) !important; }
 
@@ -75,9 +84,8 @@ img[src*="pregnancy"],
 .den img,
 .wolf img {
     border: 3px solid var(--forest2) !important;
-    background: var(--forest1) !important;  /* green background for images */
+    background: var(--forest1) !important;  /* Green background for images */
     padding: 4px;
-
     border-top-left-radius: 100px !important;
     border-top-right-radius: 100px !important;
     border-bottom-left-radius: 10px !important;
@@ -89,6 +97,7 @@ img[src*="pregnancy"],
 *::-webkit-scrollbar-thumb {
   background: var(--forest1);
   border-radius: 6px;
+}
 }
 <!DOCTYPE html>
 <html lang="en">
