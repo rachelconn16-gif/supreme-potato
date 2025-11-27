@@ -14,7 +14,7 @@
   --text-muted: #c7c7b2; /* Muted text */
   
     --panel-bg: rgba(19, 22, 18, 0.35); /* 35% opacity */
-    --text-light: #f5f5e8;
+    --text-light: #000000;
     --text-muted: #c7c7b2;
 }
 
