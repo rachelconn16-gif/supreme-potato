@@ -13,10 +13,32 @@
   --text-dark: #2a3a0f;  /* Dark green for headings and links */
   --text-muted: #c7c7b2; /* Muted text */
   
-    --panel-bg: rgba(19, 22, 18, 0.35); /* 35% opacity */
-    --text-light: #000000;
-    --text-muted: #c7c7b2;
 }
+<style>
+/* === Page Background === */
+body {
+  background: linear-gradient(180deg, rgba(16, 32, 24, 0.85), rgba(10, 20, 14, 0.95)) !important;
+  color: #e1f5e8 !important; /* misty light text */
+}
+
+/* === Thin Banner / Navigation Bar === */
+header, .site-header, #header, .navbar, nav {
+  background: rgba(118, 198, 138, 0.25) !important; /* transparent green */
+  border-bottom: 1px solid rgba(118, 198, 138, 0.45) !important;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 12px rgba(10, 20, 14, 0.45);
+}
+
+/* Links in the banner */
+header a, .navbar a, nav a {
+  color: #e1f5e8 !important;
+  text-decoration: none;
+}
+
+header a:hover, .navbar a:hover, nav a:hover {
+  color: #9bd6a8 !important;
+}
+</style>
 
 /* === Page Background Image === */
 body {
